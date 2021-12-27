@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Trang chủ</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+<body class="main-layout">
+    <!-- header section start -->
+    <div class="header_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="logo"><a asp-area="" asp-controller="Home" asp-action="Index"><img src="./images/logo.png"></a></div>
+                </div>
+                <div class="col-sm-10">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                                <a class="nav-item nav-link" asp-area="" asp-controller="Product" asp-action="Index">Sản phẩm</a>
+                                <a class="nav-item nav-link" asp-area="" asp-controller="Blog" asp-action="Index">Blog</a>
+                                <a class="nav-item nav-link" asp-area="" asp-controller="Contact" asp-action="Index">Liên hệ</a>
+                            </div>
+                        </div>
+                        <!-- <div class="search">
+                          <input class="search-input" type="search" placeholder="Tìm kiếm..."/>
+                    </div> -->
+                        <div class="li-lg">
+                            <a asp-area="" asp-controller="Login" asp-action="Index">Đăng nhập</a>
+                            <a asp-area="" asp-controller="Register" asp-action="Index"><button type="button">Đăng kí</button></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- END HEADER -->
+   @RenderBody()
+    
+    <!-- BEGIN FOOTER -->
+    <div class="section_footer">
+        <div class="container">
+            <div class="mail_section">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-2">
+                        <div><a asp-area="" asp-controller="Home" asp-action="Index"><img src="images/footer-logo.png"></a></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="footer-logo"><img src="images/phone-icon.png"><span class="map_text">(71) 1234567890</span></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="footer-logo"><img src="images/email-icon.png"><span class="map_text"><a href = "mailto: pullo@gmail.com">pullo@gmail.com</a></span></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="social_icon">
+                            <ul>
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab icon_fb fa-facebook-square"></i></a></li>
+                                <li><a href="https://www.instagarm.com/" target="_blank"><i class="fab icon_it fa-instagram-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+            <div class="footer_section_2">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-2">
+                        <p class="dummy_text">Nơi bạn có thể đặt trọn niềm tin...</p>
+                    </div>
+                    <div class="col-sm-4 col-lg-4">
+                        <h2 class="shop_text">Địa chỉ</h2>
+                        <div class="image-icon"><img src="images/map-icon.png"><span class="pet_text">Nhà sách Pullo, Khu phố 6, phường Linh Trung, thành phố Thủ Đức</span></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h2 class="adderess_text">Sản phẩm</h2>
+                        <div class="delivery_text">
+                            <ul>
+                                <li>Sách Chính trị</li>
+                                <li>Sách Giáo trình</li>
+                                <li>Sách Tiểu thuyết</li>
+                                <li>Sách Thiếu nhi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h4 class="adderess_text">Nhận thông tin</h4>
+                        <div class="form-group">
+                            <input type="text" class="enter_email" placeholder="Nhập email" name="Name">
+                        </div>
+                        <a href = "mailto: pullo@gmail.com"><button class="subscribr_bt">Đăng kí</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+    <div class="copyright">Copyright © 2021 Pullo.com - Thư viện sách online.</div>
+
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+
+
+            $('#myCarousel').carousel({
+                interval: false
+            });
+
+            //scroll slides on swipe for touch enabled devices
+
+            $("#myCarousel").on("touchstart", function (event) {
+
+                var yClick = event.originalEvent.touches[0].pageY;
+                $(this).one("touchmove", function (event) {
+
+                    var yMove = event.originalEvent.touches[0].pageY;
+                    if (Math.floor(yClick - yMove) > 1) {
+                        $(".carousel").carousel('next');
+                    }
+                    else if (Math.floor(yClick - yMove) < -1) {
+                        $(".carousel").carousel('prev');
+                    }
+                });
+                $(".carousel").on("touchend", function () {
+                    $(this).off("touchmove");
+                });
+            });
+    </script>
+</body>
+</html>

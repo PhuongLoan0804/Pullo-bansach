@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Product Page";
+}
+<!-- BEGIN PRODUCT -->
+<div class="collection_text">Sản phẩm</div>
+<div class="layout_padding gallery_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="filter-name">
+                    <h3>Danh mục sản phẩm</h3>
+                    <input type="checkbox" id="" name="" value="chinhtri">
+                    <label for=""> Sách chính trị</label><br>
+                    <input type="checkbox" id="" name="" value="giaotrinh">
+                    <label for=""> Sách giáo trình</label><br>
+                    <input type="checkbox" id="" name="" value="tieuthuyet">
+                    <label for=""> Sách tiểu thuyết</label><br>
+                    <input type="checkbox" id="" name="" value="thieunhi">
+                    <label for=""> Sách thiếu nhi</label><br>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="best_shoes">
+                    <div class="shoes_icon">
+                        <a asp-area="" asp-controller="ProductDetail" asp-action="Index"><img src="./images/khong_gia_dinh_600x867.png"></a>
+                    </div>
+                    <div class="borrow-btn">
+                        <a asp-area="" asp-controller="ProductDetail" asp-action="Index"><button>Mượn ngay</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="best_shoes">
+                    <div class="shoes_icon">
+                        <a asp-area="" asp-controller="ProductDetail" asp-action="Index"><img src="./images/bếp nhà đỏ lửa.jpg"></a>
+                    </div>
+                    <div class="borrow-btn">
+                        <a asp-area="" asp-controller="ProductDetail" asp-action="Index"><button>Mượn ngay</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="best_shoes">
+                    <div class="shoes_icon">
+                        <a asp-area="" asp-controller="ProductDetail" asp-action="Index"><img src="./images/bếp nhà đỏ lửa.jpg"></a>
+                    </div>
+                    <div class="borrow-btn">
+                        <a asp-area="" asp-controller="ProductDetail" asp-action="Index"><button>Mượn ngay</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PRODUCT -->

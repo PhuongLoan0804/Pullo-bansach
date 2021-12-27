@@ -1,0 +1,109 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Product Detail Page";
+}
+<!-- BEGIN DETAIL -->
+<head>
+    <link rel="stylesheet" href="./css/style-detail.css">
+</head>
+<body>
+    <div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-content-right">
+                        <div class="product-breadcroumb">
+                            <a asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                            <a asp-area="" asp-controller="Product" asp-action="Index">Sản phẩm</a>
+                            <a href="">Giáng sinh của Mog</a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="product-images">
+                                    <div class="product-main-img">
+                                        <img src="./images/giáng sinh của mog.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="product-inner">
+                                    <h2 class="product-name">Giáng sinh của Mog</h2>
+                                    <div class="count-product">
+                                        <p>Số lượng</p>
+                                        <div class="count-input">
+                                            <input type="button" value="-" class="sub">
+                                            <input type="text" value="1" class="number">
+                                            <input type="button" value="+" class="plus">
+                                        </div>
+                                    </div>
+                                    <button class="add_to_cart_button" type="submit">Thêm vào giỏ hàng</button>
+
+                                    <div class="tabpanel">
+                                        <h3>Thông tin chi tiết</h3>
+                                        <p>Tác giả: Judith Kerr</p>
+                                        <p>Kích Thước: 21 x 27 cm</p>
+                                        <p>Số Trang: 32</p>
+                                        <p>Nhà Xuất Bản: Kim Đồng</p>
+                                        <p>Năm Xuất Bản: 2016</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book-infor">
+                            <h2>Mô tả sản phẩm</h2>
+                            <p>Kể từ lần đầu xuất hiện trong cuốn "Mog, cô mèo đãng trí" vào năm 1970, Mog Mập dần trở thành nàng mèo của mọi nhà, những "chuyến phiêu lưu" của Mog đã mang lại niềm vui cho trẻ em trên toàn thế giới.</p>
+                            <p>Mèo Mog Mập đã được miêu tả một cách rất tuyệt vời - một chút mèo mơ mộng, đầy trí tưởng tượng, những vô cùng đáng yêu và cực kì trung thành. Mog cho độc giả thấy được vẻ thu hút trong sự lơ đễnh và đầy vui nhộn của một thú nuôi, ở mỗi "chuyến phiêu lưu" cô trải qua. Cô mèo đã kể những câu chuyện mà chính cô cũng không hiểu rõ, nhưng kể cả bạn đọc nhỏ tuổi nhất cũng có thể thấy được từ những ảnh minh họa sinh động và gần gũi.</p>
+                            <p>Judith Kerr là tác giả sách tranh nổi tiếng với loạt truyện về mèo Mog và "Chú hổ đến uống trà". Các tựa sách thiếu nhi của bà đã được ấn hành tới 9 triệu bản và trở thành những tác phẩm kinh điển.</p>
+                        </div>
+
+                        <div class="related-products-wrapper">
+                            <h2 class="related-products-title">Sản phẩm tương tự</h2>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="best_shoes">
+                                        <div class="shoes_icon"><img src="./images/fdbeee3a90bdd3a95a0d1aa18a332d4c.jfif"></div>
+                                        <div class="borrow-btn">
+                                            <button>Mượn ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="best_shoes">
+                                        <div class="shoes_icon"><img src="./images/khong_gia_dinh_600x867.png"></div>
+                                        <div class="borrow-btn">
+                                            <button>Mượn ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="best_shoes">
+                                        <div class="shoes_icon"><img src="./images/bếp nhà đỏ lửa.jpg"></div>
+                                        <div class="borrow-btn">
+                                            <button>Mượn ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="best_shoes">
+                                        <div class="shoes_icon"><img src="./images/44fde0659ea63ee54267c9237d96fad0.jpg"></div>
+                                        <div class="borrow-btn">
+                                            <button>Mượn ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+
+    <!-- END DETAIL -->
