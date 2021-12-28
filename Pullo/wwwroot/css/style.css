@@ -264,6 +264,10 @@ input[type="checkbox"] {
     background-color: #A13333;
 }
 
+.li-lg>a>i.icon-cart{
+    font-size: 1.5rem;
+}
+
 .padding_0{ width: 100%; float: left; }
 
 .mens_taital{ width: 100%; float: left; color: #908d92; font-size: 14pt; }

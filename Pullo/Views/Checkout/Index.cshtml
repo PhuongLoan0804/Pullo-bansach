@@ -1,0 +1,183 @@
+﻿
+@{
+    ViewData["Title"] = "Checkout Page";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/checkout/style.css">
+</head>
+<!-- checkout section start -->
+<section class="shop checkout section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-12">
+                <div class="checkout-form">
+                    <h2>THANH TOÁN TẠI ĐÂY</h2>
+                    <p>Vui lòng điền thông tin để thanh toán nhanh chóng hơn</p>
+                    <!-- Form -->
+                    <form class="form" method="post" action="#">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div class="form-group">
+                                    <label>Họ và tên<span>*</span></label>
+                                    <input type="text" name="name" placeholder="" required="required">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>Email<span>*</span></label>
+                                    <input type="email" name="email" placeholder="" required="required">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>Số điện thoại<span>*</span></label>
+                                    <input type="text" name="number" placeholder="" required="required">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>Tỉnh/Thành phố<span>*</span></label>
+                                    <input type="email" name="Country" placeholder="" required="required">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>Quận/Huyện<span>*</span></label>
+                                    <input type="email" name="Country" placeholder="" required="required">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>Phường/Xã<span>*</span></label>
+                                    <input type="text" name="address" placeholder="" required="required">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label>Đường<span>*</span></label>
+                                    <input type="text" name="address" placeholder="" required="required">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group create-account">
+                                    <input id="cbox" type="checkbox">
+                                    <label>Tạo tài khoản?</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--/ End Form -->
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="order-details">
+                    <!-- Order Widget -->
+                    <div class="single-widget">
+                        <h2>TỔNG GIỎ HÀNG</h2>
+                        <div class="content">
+                            <ul>
+                                <li>Tổng hóa đơn<span>330.000</span></li>
+                                <li>(+) Phí vận chuyển<span>Miễn phí</span></li>
+                                <li class="last">Tổng cộng<span>330.000</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/ End Order Widget -->
+                    <!-- Order Widget -->
+                    <div class="single-widget">
+                        <h2>Phương thức thanh toán</h2>
+                        <div class="content" style="padding: 10px 20px;">
+                            
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Thanh toán Momo 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Thanh toán khi nhận hàng
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        Payal
+                                    </label>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <!--/ End Order Widget -->
+                    <!-- Payment Method Widget -->
+                    <div class="single-widget payement">
+                        <div class="content">
+                            <img src="./images/payment-method.png" alt="#">
+                        </div>
+                    </div>
+                    <!--/ End Payment Method Widget -->
+                    <!-- Button Widget -->
+                    <div class="single-widget get-button">
+                        <div class="content">
+                            <div class="button">
+                                <a href="#" class="btn">đặt hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ End Button Widget -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ End Checkout -->
+<!-- Start Shop Services Area  -->
+<section class="shop-services section home">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="fas fa-truck"></i>
+                    <h4>Miễn phí vận chuyển</h4>
+                    <p style="margin: unset">Miễn phí vận chuyển cho tất cả các hóa đơn</p>
+                </div>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="fas fa-sync-alt"></i>
+                    <h4>Miễn phí trả hàng</h4>
+                    <p style="margin: unset">Trong 15 ngày</p>
+                </div>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="fas fa-user-lock"></i>
+                    <h4>Thanh toán</h4>
+                    <p style="margin: unset">Thanh toán an toàn 100%</p>
+                </div>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h4>Giả cả</h4>
+                    <p style="margin: unset">Giá cả phải chăng</p>
+                </div>
+                <!-- End Single Service -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Shop Services -->

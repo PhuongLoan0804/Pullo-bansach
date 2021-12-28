@@ -1,0 +1,180 @@
+﻿@{
+    ViewData["Title"] = "Cart Page";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/checkout/style.css">
+
+</head>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="bread-inner">
+                    <ul class="bread-list">
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumbs -->
+<!-- Shopping Cart -->
+<div class="shopping-cart section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Shopping Summery -->
+                <table class="table shopping-summery">
+                    <thead>
+                        <tr class="main-hading">
+                            <th>SẢN PHẨM</th>
+                            <th>TÊN SẢN PHẨM</th>
+                            <th class="text-center">ĐƠN GIÁ</th>
+                            <th class="text-center">SỐ LƯỢNG</th>
+                            <th class="text-center">TỔNG TIỀN</th>
+                            <th class="text-center"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
+                            <td class="product-des" data-title="Description">
+                                <p class="product-name"><a href="#">Giáng sinh của Mog</a></p>
+             
+                            </td>
+                            <td class="price" data-title="Price"><span>210.000 </span></td>
+                            <td class="qty" data-title="Qty">
+                                <!-- Input Order -->
+                                <div class="input-group">
+                                    <div class="button minus">
+                                        <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="100" value="1">
+                                    <div class="button plus">
+                                        <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--/ End Input Order -->
+                            </td>
+                            <td class="total-amount" data-title="Total"><span>210.000</span></td>
+                            <td class="action" data-title="Remove"><i style="cursor: pointer" class="fas fa-trash-alt"></i></td>
+                        </tr>
+                   
+                        <tr>
+                            <td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
+                            <td class="product-des" data-title="Description">
+                                <p class="product-name"><a href="#">Không gia đình</a></p>
+                                
+                            </td>
+                            <td class="price" data-title="Price"><span>120.000 </span></td>
+                            <td class="qty" data-title="Qty">
+                                <!-- Input Order -->
+                                <div class="input-group">
+                                    <div class="button minus">
+                                        <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[3]">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" name="quant[3]" class="input-number" data-min="1" data-max="100" value="1">
+                                    <div class="button plus">
+                                        <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[3]">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--/ End Input Order -->
+                            </td>
+                            <td class="total-amount" data-title="Total"><span>120.000</span></td>
+                            <td class="action" data-title="Remove"><i style="cursor: pointer" class="fas fa-trash-alt"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--/ End Shopping Summery -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- Total Amount -->
+                <div class="total-amount">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-5 col-12">
+                        </div>
+                        <div class="col-lg-4 col-md-7 col-12">
+                            <div class="right">
+                                <ul>
+                                    <li>Tổng đơn hàng<span>330.000</span></li>
+                                    <li>Phí vận chuyển<span>Miễn phí</span></li>
+                                    <li class="last">Tổng tiền<span>330.000</span></li>
+                                </ul>
+                                <div class="button5">
+                                    <a asp-area="" asp-controller="Checkout" asp-action="Index" class="btn">Thanh toán</a>
+                                    <a asp-area="" asp-controller="Product" asp-action="Index" class="btn">Tiếp tục mua hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ End Total Amount -->
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ End Shopping Cart -->
+<!-- Start Shop Services Area  -->
+<section class="shop-services section home">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="fas fa-truck"></i>
+                    <h4>Miễn phí vận chuyển</h4>
+                    <p style="margin: unset">Miễn phí vận chuyển cho tất cả các hóa đơn</p>
+                </div>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="fas fa-sync-alt"></i>
+                    <h4>Miễn phí trả hàng</h4>
+                    <p style="margin: unset">Trong 15 ngày</p>
+                </div>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="fas fa-user-lock"></i>
+                    <h4>Thanh toán</h4>
+                    <p style="margin: unset">Thanh toán an toàn 100%</p>
+                </div>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h4>Giả cả</h4>
+                    <p style="margin: unset">Giá cả phải chăng</p>
+                </div>
+                <!-- End Single Service -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Shop Services -->
+
+<script src="./js/active.js"></script>
