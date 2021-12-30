@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Account Page";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/account/style.css">
+</head>
+
+<div class="container">
+    <div class="row gutters">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="account-settings">
+                        <div class="user-profile">
+                            <div class="user-avatar">
+                                <img src="./images/Awww cute.jfif" alt="">
+                            </div>
+                            <h5 class="user-name">Phương Loan</h5>
+                            <h6 class="user-email">phuongloan@gmail.com</h6>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h2 class="mb-2 text-primary">THÔNG TIN TÀI KHOẢN</h2>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="fullName">Họ và tên</label>
+                                <input type="text" class="form-control" id="fullName" value="Phương Loan">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="eMail">Email</label>
+                                <input type="email" class="form-control" id="eMail" value="phuongloan@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại</label>
+                                <input type="text" class="form-control" id="phone" value="0355 499 499">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="website">Mật khẩu</label>
+                                <input type="url" class="form-control" id="website" value="lonton123">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="Street">Địa chỉ</label>
+                                <input type="name" class="form-control" id="Street" value="Gia Lai">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="text-right">
+                                <button type="button" id="submit" name="submit" class="btn btn-secondary">Hủy</button>
+                                <button type="button" id="submit" name="submit" class="btn btn-primary">Sửa</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row gutters">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h2 class="mb-2 text-primary">LỊCH SỬ ĐƠN HÀNG</h2>
+                        </div>
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Mã đơn hàng</th>
+                                    <th scope="col">Ngày đặt hàng</th>
+                                    <th scope="col">Sản phẩm</th>
+                                    <th scope="col">Tổng tiền</th>
+                                    <th scope="col">Tình trạng đơn hàng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>20/05/2021</td>
+                                    <td>Đắc nhân tâm</td>
+                                    <td>69 000</td>
+                                    <td>Đã giao</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>30/12/2021</td>
+                                    <td>Giáng sinh của Mog</td>
+                                    <td>110 000</td>
+                                    <td>Đang giao</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
